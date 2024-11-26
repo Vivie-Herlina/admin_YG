@@ -1,0 +1,151 @@
+/* Artist Section */
+.artist-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .artist-image {
+    width: 240px;
+    height: 230px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .uploaded-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .upload-label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .hidden-input {
+    display: none;
+  }
+  
+  .artist-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-input {
+    width: 420px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .artist-description {
+    width: 700px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  /* Member Section */
+  .member-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+  
+  .member-image {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .member-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .member-input {
+    width: 470px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .member-description {
+    width: 470px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  /* Buttons */
+  .add-member-btn,
+  .submit-btn {
+    background-color: #292929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .add-member-btn:hover,
+  .submit-btn:hover {
+    background-color: #444;
+  }
+  
+
+  h2 {
+    margin-top: 30px; /* Jarak atas */
+    margin-bottom: 20px; /* Jarak bawah */
+   
+  }
+
+  /* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Untuk memposisikan tombol di tengah */
+    gap: 20px; /* Jarak antar tombol */
+    margin-top: 20px; /* Jarak atas untuk grup tombol */
+  }
+  
+  /* Buttons */
+  .add-member-btn,
+  .submit-btn {
+    background-color: #292929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-member-btn:hover,
+  .submit-btn:hover {
+    background-color: #444;
+  }
+  

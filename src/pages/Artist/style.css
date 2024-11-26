@@ -1,0 +1,66 @@
+/* Header Section */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .add-artist-btn {
+    background-color: #292929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-artist-btn:hover {
+    background-color: #292929;
+  }
+  
+  /* Artist Grid */
+  .artist-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif grid */
+    gap: 20px; /* Jarak antar kartu */
+  }
+  
+  .artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .artist-img {
+    width: 150%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px; /* Radius pada gambar */
+    margin-bottom: 30px;
+    object-fit: cover;
+  }
+  
+  .artist-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  

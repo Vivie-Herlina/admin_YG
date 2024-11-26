@@ -1,0 +1,139 @@
+/* Kontainer Utama */
+.concert-detail {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Gambar Detail Konser */
+.concert-detail-image {
+    width: 860px;
+    height: 320px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+/* Styling untuk Form */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom utama */
+    gap: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Styling untuk Label */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Styling untuk Input dan Textarea */
+form input,
+form textarea {
+    width: 420px; /* Set lebar 860 piksel */
+    height: 40px; /* Set tinggi 151 piksel */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    resize: none; /* Menonaktifkan pengubahan ukuran manual */
+}
+
+/* Disabled Input */
+form input:disabled,
+form textarea:disabled {
+    background-color: #eaeaea;
+    cursor: not-allowed;
+}
+
+/* Artis Name dan Concert Name */
+form .artist-concert {
+    grid-column: span 2; /* Menggunakan seluruh kolom untuk artis-concert */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom sejajar */
+    gap: 20px;
+}
+
+/* Location dan Date */
+form .location-date {
+    grid-column: span 2; /* Menggunakan seluruh kolom untuk location-date */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom sejajar */
+    gap: 20px;
+}
+
+textarea[name="eventDescription"] {
+    width: 860px; /* Set lebar 860 piksel */
+    height: 151px; /* Set tinggi 151 piksel */
+    resize: none; /* Mencegah pengguna untuk mengubah ukuran */
+    overflow: hidden; /* Mencegah scroll muncul */
+    font-size: 14px; /* Ukuran font */
+    line-height: 1.6; /* Tinggi baris teks */
+    padding: 10px; /* Spasi dalam */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 8px; /* Radius sudut */
+    background-color: #f7f7f7; /* Warna latar belakang */
+    color: #555; /* Warna teks */
+    box-sizing: border-box; /* Menghindari padding memengaruhi ukuran elemen */
+    white-space: pre-wrap; /* Agar teks tetap wrap meskipun ada banyak spasi */
+    overflow-wrap: break-word; /* Memastikan kata panjang tidak keluar dari batas */
+    grid-column: span 2; 
+  }
+
+
+/* Tombol Edit dan Save */
+.btn-container {
+    margin-top: 10px;
+    grid-column: span 2; /* Menempatkan tombol di seluruh baris bawah */
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-container button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 768px) {
+    .concert-detail-image {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        grid-template-columns: 1fr; /* Form menjadi satu kolom di perangkat kecil */
+    }
+
+    .artist-concert,
+    .location-date {
+        grid-template-columns: 1fr; /* Semua elemen dalam satu kolom */
+    }
+
+    textarea[name="event-description"] {
+        height: 120px; /* Tinggi textarea untuk layar kecil */
+    }
+
+    .btn-container {
+        justify-content: center; /* Menempatkan tombol di tengah pada layar kecil */
+    }
+}
