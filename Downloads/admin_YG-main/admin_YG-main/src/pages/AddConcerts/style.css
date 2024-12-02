@@ -1,0 +1,134 @@
+/* Section utama */
+.concert-section {
+  padding: 20px;
+  color: #333;
+}
+
+/* Header untuk gambar dan form */
+.main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Judul */
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Container untuk gambar upload */
+.concert-image {
+  width: 100%;
+  max-width: 860px;
+  height: 320px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin: 0 auto 30px auto;
+}
+
+.upload-label {
+  font-size: 40px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Form container */
+.form-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Layout form */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group-full {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Label dan input */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-input,
+.form-textarea {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #888;
+}
+
+/* Tombol submit */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  padding: 12px 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+}

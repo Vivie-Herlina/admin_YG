@@ -1,0 +1,78 @@
+/* Section utama */
+.concert-section {
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Header section untuk tombol dan judul */
+  .concert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .concert-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-concert-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-concert-button:hover {
+    background-color: #333;
+  }
+  
+  /* Grid layout untuk kartu konser */
+  .concert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Desain untuk kartu konser */
+  .concert-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .concert-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .concert-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .concert-card p {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .add-artist-btn {
+    background-color: #292929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }

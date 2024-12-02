@@ -1,0 +1,93 @@
+/* Ensure the container doesn't overflow horizontally */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+  
+
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .image-upload {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .product-name input {
+    width: 450px;
+    height: 40px;
+  }
+  
+  .form-row .form-group {
+    width: 285px;  /* Adjust width for all form fields in the row */
+  }
+  
+  .description textarea {
+    width: 860px;
+    height: 200px;
+  }
+  
+  .submit-btn {
+    width: 200px;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .submit-btn:hover {
+    background-color: #444;
+  }
+  
